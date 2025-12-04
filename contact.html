@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="contactTitle">कॉन्टैक्ट – Vijay Electronics</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand-logo" src="image/Vijay Electronics Unnao.png" alt="Vijay Electronics Unnao" />
+      <div class="brand-text">
+        <span class="brand-title" data-i18n="brandName">विजय इलेक्ट्रॉनिक्स</span>
+        <span class="brand-sub" data-i18n="brandCity">उन्नाव</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link" data-i18n="navHome">होम</a>
+      <a href="products.html" class="nav-link" data-i18n="navProducts">प्रोडक्ट्स</a>
+      <a href="services.html" class="nav-link" data-i18n="navServices">सर्विसेस</a>
+      <a href="contact.html" class="nav-link active" data-i18n="navContact">कॉन्टैक्ट</a>
+    </nav>
+    <div class="actions">
+      <button id="langToggle" class="btn" aria-label="Language">HI/EN</button>
+      <button id="themeToggle" class="btn" aria-label="Theme">☀︎/☾</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 data-i18n="contactHeading">कॉन्टैक्ट फॉर्म</h1>
+    <div class="form-grid">
+      <form id="contactForm" class="form">
+        <input type="hidden" name="_subject" value="New inquiry from Vijay Electronics website" />
+        <label>
+          <span data-i18n="labelName">नाम</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span data-i18n="labelPhone">मोबाइल</span>
+          <input type="tel" name="phone" required />
+        </label>
+        <label>
+          <span data-i18n="labelEmail">ईमेल</span>
+          <input type="email" name="email" />
+        </label>
+        <label>
+          <span data-i18n="labelService">सेवा</span>
+          <select name="service" required>
+            <option value="CCTV" data-i18n="optCctv">सीसीटीवी</option>
+            <option value="LED TV" data-i18n="optLed">एलईडी टीवी</option>
+            <option value="Laptop/Desktop" data-i18n="optLaptop">लैपटॉप/डेस्कटॉप</option>
+            <option value="AMC" data-i18n="optAmc">एएमसी</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="labelMessage">मैसेज</span>
+          <textarea name="message" rows="4" placeholder="अपनी ज़रूरत लिखें" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary" data-i18n="submitBtn">सबमिट</button>
+          <button type="button" id="whatsappBtn" class="btn" data-i18n="whatsappBtn">WhatsApp पर भेजें</button>
+        </div>
+        <div id="formStatus" class="status" aria-live="polite"></div>
+      </form>
+      <div>
+        <iframe class="map big" src="https://www.google.com/maps?q=Vijay+Electronics+Unnao&output=embed" loading="lazy"></iframe>
+        <div class="contact-cards">
+          <a class="card mini" href="tel:+918090090051">+91 8090090051</a>
+          <a class="card mini" href="mailto:vijayelectronic689@gmail.com">vijayelectronic689@gmail.com</a>
+          <a class="card mini" target="_blank" href="https://wa.me/918090090051">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="copy">
+      <span data-i18n="copyright">© 2025 विजय इलेक्ट्रॉनिक्स, उन्नाव</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
